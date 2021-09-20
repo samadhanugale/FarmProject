@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View / Add</title>
+    <style>
+        body{
+            background: linear-gradient(120deg,skyblue,lightblue,lightgreen,lightgreen);
+            place-items: center;
+            
+        }
+        td{
+            position: relative;
+            height: 10%;
+            width: 100px;
+            text-align: center;
+            border: 2px solid grey;
+            vertical-align: middle; 
+            background-color: white;    
+              
+        }
+        #addData::before, #viewData::before{
+            color: maroon;
+        }
+        #addData:visited, #viewData:visited{
+           color: green;
+        }
+        label:visited{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+   
+        <table>
+            <tr><td><label >Choose : </label></td>
+                <td>
+                   <a href="DataTable.html"> <label id="addData" for="choose">Add Data : </label><input type="radio" id="add" name="choose"></a>
+                    <a href="#"><label id="viewData" for="choose">ViewData : </label><input type="radio" id="view" name="choose"></a>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
