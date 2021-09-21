@@ -15,7 +15,7 @@ h3{
     font-style: normal;
     font-weight: bold;
     text-align:none; 
-    background-color: rgb(86, 175, 179); 
+    background-color: rgb(50, 196, 204); 
     border-collapse: collapse; 
     border: 2px solid navy
   }
@@ -23,5 +23,5 @@ h3{
     border: 0px
   }
   body{
-      background: linear-gradient(120deg,rgb(96, 223, 96),pink,rgb(240, 240, 136));
+    background: linear-gradient(120deg,skyblue,lightblue,lightgreen,lightgreen);
   }

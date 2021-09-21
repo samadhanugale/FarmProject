@@ -13,6 +13,14 @@
 </head>
  
 <body>
+    <table>
+        <tr><td><label >Choose : </label></td>
+            <td>
+               <a href="DataTable.html"> <label id="addData" for="choose">Add Data : </label><input type="radio" id="add" name="choose"></a>
+                <a href="#"><label id="viewData" for="choose">ViewData : </label><input type="radio" id="view" name="choose"></a>
+            </td>
+        </tr>
+    </table>
     <h3>Add Data</h3>
 
     
@@ -101,12 +109,16 @@
         </select>
         </td>
     </tr>
+    <tr>
+        <td>Time :</td>
+        <td><input type="time"></td>
+    </tr>
 
     <tr>
         <td>method</td>
         <td>
         Spray <input type="radio" name="Gender" value="Male" required />
-        Irigation <input type="radio" name="Gender" value="Female" />
+        Irrigation <input type="radio" name="Gender" value="Female" />
         </td>
     </tr>
     
