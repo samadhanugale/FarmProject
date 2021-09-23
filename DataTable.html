@@ -28,14 +28,14 @@
     
     <tr>
         <td>Pesticide Name :</td>
-        <td><input type="text" name="pesticide_Name" maxlength="30" required/>
+        <td><input type="text" id="pesticideName" onblur="validation1()" maxlength="30" />
 
         </td>
     </tr>
  
     <tr>
         <td>Person name :</td>
-        <td><input required type="text" name="person_Name" maxlength="30"/>
+        <td><input type="text" name="person_Name" onblur="validation2()" id="personName" maxlength="30"/>
        
         </td>
     </tr>
@@ -44,8 +44,8 @@
     <td>Date :</td>
     
     <td>
-        <select name="day" id="Day" required>
-            <option value="-1">Day:</option>
+        <select name="day" onblur="validation3()" id="Day" >
+            <option value="0">Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -83,8 +83,8 @@
             <option value="31">31</option>
         </select>
         
-        <select id="Month" name="Month">
-            <option value="-1">Month:</option>
+        <select id="Month" onblur="validation4()" name="Month">
+            <option value="0">Month</option>
             <option value="January">Jan</option>
             <option value="February">Feb</option>
             <option value="March">Mar</option>
@@ -99,12 +99,12 @@
             <option value="December">Dec</option>
         </select>
         
-        <select name="Year" id="Year">
-            
-            <option value="2008">2021</option>
-            <option value="2007">2020</option>
-            <option value="2006">2019</option>
-            <option value="2005">2018</option>
+        <select name="Year" onblur="validation5()" id="Year">
+            <option value="0">Year</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
      
         </select>
         </td>
@@ -165,6 +165,6 @@
     </table>
     
    
- 
+ <script src="dataTable.js"></script>
 </body>
 </html>
