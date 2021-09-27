@@ -13,28 +13,15 @@
   
 </head>
 <body>
-    <div ><h1 style="text-align: center; position: relative; top: 50px;">Welcome to Farm</h1></div>
+    <div ><h1 class="name">Welcome to Farm</h1></div>
  <div class="center">
      <h1>Login</h1>
-     <form method="post">
-         <div class="txtfield">
-             <input type="text" id="username">
-             <span></span>
-             <label>Username</label>
-         </div>
-         <div class="txtfield">
-            <input type="password" id="password">
-            <span></span>
-            <label>Password</label>
-        </div>
-        <div class="pass">Forget Password?</div>
-        
-        <a href="menu.html"><input type="submit" value="Login" ></a>
-        
-        <div class="signuplink">
-            New User?<a href="signup.html">SignUp</a>
-        </div>
-     </form>
+     <table >
+         <tr><td>Userame : </td><td><input type="text" id="username" onblur="validation1()"></td></tr>
+         <tr><td>Password : </td><td><input type="password" id="password" onblur="validation2()"></td></tr>
+         <tr class="rw"><td></td><td><input type="submit" onclick="return validate()"></td></tr>
+         <tr class="rw"><td>New user? </td><td> <a href="signup.html">SignUp</a></td></tr>
+     </table>
      <script src="homepage.js"></script>
  </div>
 </body>

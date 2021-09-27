@@ -9,15 +9,16 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Menu</title>
 
+
     <style>
         body{
-            background: linear-gradient(120deg,skyblue,lightblue,lightgreen,lightgreen);
+            background-image: url("1466836.jpg");
             
         }
         img{
             height: 130px;
             width: 178px;
-            border: 2px solid skyblue;
+            border: 2px solid white;
             background-color: white;
             display: inline-block;
             font-size: 16px;
@@ -45,7 +46,7 @@
         }
         section>div{
             position: relative;
-            top: 60%;
+            top: 50%;
             padding:20px ;
             margin: 20px;
             align-items: center;
@@ -53,7 +54,7 @@
             /* display: inline-block; */
             /* display:inline-block ,position,margin*/
         }
-        h2{
+        #logout{
             position: relative;
             left: 92%;
             border: 2px solid red;
@@ -62,14 +63,31 @@
             color: white;
             background-color: rgb(212, 52, 52);
             font-size: 16px;
+            height: 10%;
+        }
+        h1{
+            position: relative;
+            left: 40%;
+            font-size:30px;
+            color: white;
+            border: 2px solid white;
+            background-color:rgba(192,192,192,0.5   );
+            border-radius: 4px;
+            height: 40px;
+            padding: 5px;
+            
+        }
+        figcaption{
+            color:white;
         }
     </style>
 </head>
 <body>
-    <a href="Homepage.html"><h2>Logout</h2></a>
+    <a href="Homepage.html"><h2 id="logout" class="logout">Logout</h2></a>
   <section class="section">
-        <div class="image1">
-         <a href="view.html"> <img src="images/img1.jpg" alt=""></a>
+      <h1 id="chooseFarm">. Choose Farm .</h1>
+        <div >
+         <a href="view.html"> <img src="images/img1.jpg" class="image1" alt=""></a>
          <figcaption>Farm 1</figcaption>
         </div>
         <div class="image2"><a href="view.html"> <img src="images/img2.jpg" alt=""></a>
