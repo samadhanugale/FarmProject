@@ -25,3 +25,13 @@ h3{
   body{
     background: linear-gradient(120deg,skyblue,lightblue,lightgreen,lightgreen);
   }
+  h2{
+    position: relative;
+    left: 92%;
+    border: 2px solid red;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(212, 52, 52);
+    font-size: 16px;
+}
